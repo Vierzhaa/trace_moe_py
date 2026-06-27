@@ -1,4 +1,4 @@
-import requests, os, sys
+import requests, os
 import urllib.parse
 
 def c():
@@ -11,8 +11,6 @@ def back(m=None):
     c()
 def goto(x, y):
     print(f"\033[{x};{y}H", end="")
-def rowcalc(n):
-    return 4 * n - 4
 
 
 c()
