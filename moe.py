@@ -23,8 +23,8 @@ while True:
             headers={"Content-Type": "image/jpeg"}
             ).json()
             c()
-            for s,i in enumerate(n['result']):
-                print(f"Result {s+1}\nenglish title: {i['anilist']['title']['english']}\nromaji title: {i['anilist']['title']['romaji']}\nEpisode: {i['episode']}\nSimilarity: {i['similarity']:.2%}\nFrom: {i['from']:.2f}s to {i['to']:.2f}s\nVideo: {i['video']}\nanilist id: {i['anilist']['id']}\n")
+            for s,i in enumerate(n['result'],1):
+                print(f"Result {s}\nenglish title: {i['anilist']['title']['english']}\nromaji title: {i['anilist']['title']['romaji']}\nEpisode: {i['episode']}\nSimilarity: {i['similarity']:.2%}\nFrom: {i['from']:.2f}s to {i['to']:.2f}s\nVideo: {i['video']}\nanilist id: {i['anilist']['id']}\n")
             if input("Do you want to search again? (y/n): ").lower() != "y":
                 break
             c()
