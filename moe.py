@@ -9,9 +9,6 @@ def back(m=None):
         print(m)
     input("Press Enter to continue...")
     c()
-def goto(x, y):
-    print(f"\033[{x};{y}H", end="")
-
 
 c()
 while True:
